@@ -240,7 +240,7 @@ Project Link: [https://github.com/Daem0n-th/fastaes](https://github.com/Daem0n-t
 [issues-url]: https://github.com/Daem0n-th/fastaes/issues
 [license-shield]: https://img.shields.io/github/license/Daem0n-th/fastaes.svg?style=for-the-badge
 [license-url]: https://github.com/Daem0n-th/fastaes/blob/master/LICENSE
-[build-shield]: https://img.shields.io/circleci/build/github/Daem0n-th/fastaes/master?style=for-the-badge
+[build-shield]: https://img.shields.io/circleci/build/github/Daem0n-th/fastaes/main?logo=circleCI&style=for-the-badge
 [build-url]: https://app.circleci.com/pipelines/github/Daem0n-th/fastaes?branch=main
 [download-shield]: https://img.shields.io/badge/Latest-build-red?style=for-the-badge
-[download-url]: https://4-431018732-gh.circle-artifacts.com/0/fastaes
+[download-url]: https://6-431018732-gh.circle-artifacts.com/0/fastaes
