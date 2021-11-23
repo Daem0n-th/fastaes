@@ -23,6 +23,7 @@
 [![Issues][issues-shield]][issues-url]
 [![BSD3 License][license-shield]][license-url]
 [![CircleCI][build-shield]][build-url]
+[![Download][download-shield]][download-url]
 
 
 
@@ -241,4 +242,5 @@ Project Link: [https://github.com/Daem0n-th/fastaes](https://github.com/Daem0n-t
 [license-url]: https://github.com/Daem0n-th/fastaes/blob/master/LICENSE
 [build-shield]: https://img.shields.io/circleci/build/github/Daem0n-th/fastaes/master?style=for-the-badge
 [build-url]: https://app.circleci.com/pipelines/github/Daem0n-th/fastaes?branch=main
-
+[download-shield]: https://img.shields.io/badge/Latest-build-red?style=for-the-badge
+[download-url]: https://4-431018732-gh.circle-artifacts.com/0/fastaes

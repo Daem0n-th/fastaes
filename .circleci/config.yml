@@ -31,7 +31,7 @@ jobs:
             - "/root/.stack"
       - store_artifacts: # upload build artifact for display in CircleCi
           path: ~/.local/bin/fastaes-exe
-          destination: fastaes-exe
+          destination: fastaes
 
   
 
