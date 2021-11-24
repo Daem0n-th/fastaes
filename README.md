@@ -90,19 +90,25 @@ A fast, simple commandline utility to encrypt or decrypt files in AES written in
 ```
 fastaes v0.1.0.0, (C) Dheemanth Manur
 
-aesargs [OPTIONS] [INPUT FILE]
-  Encrypt/Decrypt files in AES256
+fastaes [COMMAND] ... [OPTIONS]
+  Generate AES keys or Encrypt/Decrypt files in AES256
 
 Common flags:
-  -o --output=ITEM      Filename for the output data.
-  -d --decrypt          Decrypt the file.
-  -k --key=ITEM         File containing the AES key to encrypt/decrypt the
-                        file.
   -? --help             Display help message
   -V --version          Print version information
      --numeric-version  Print just the version number
-  -v --verbose          Loud verbosity
-  -q --quiet            Quiet verbosity
+
+fastaes gen [OPTIONS] FILE
+
+fastaes enc [OPTIONS] FILE
+
+  -o --output=ITEM      File name for the encrypted data.
+  -k --key=ITEM         AES key file to encrypt the file with.
+
+fastaes dec [OPTIONS] FILE
+
+  -o --output=ITEM      File name for the decrypted data.
+  -k --key=ITEM         AES key file to decrypt the file with.
 ```
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
