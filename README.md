@@ -23,8 +23,6 @@
 [![Issues][issues-shield]][issues-url]
 [![BSD3 License][license-shield]][license-url]
 [![CircleCI][build-shield]][build-url]
-[![Download][download-shield]][download-url]
-
 
 
 <!-- PROJECT LOGO -->
