@@ -1,5 +1,6 @@
 module Crypto.Aes
-  ( encryptFile,
+  ( genKeyFile,
+    encryptFile,
     decryptFile,
   )
 where
@@ -8,12 +9,19 @@ import Crypto.Cipher.AES (AES256)
 import Crypto.Cipher.Types (BlockCipher (ecbDecrypt, ecbEncrypt), Cipher (cipherInit))
 import Crypto.Data.Padding (Format (PKCS7), pad, unpad)
 import Crypto.Error (CryptoError, eitherCryptoError)
+import Crypto.Random (getRandomBytes)
 import Data.ByteString (ByteString)
 import qualified Data.ByteString as BS
 import Data.Maybe (fromJust)
 
 aesInit :: Cipher a => ByteString -> Either CryptoError a
 aesInit k = eitherCryptoError (cipherInit k)
+
+aesKey :: IO ByteString
+aesKey = getRandomBytes 32
+
+genKeyFile :: FilePath -> IO ()
+genKeyFile keyFile = BS.writeFile keyFile =<< aesKey
 
 aesEncrypt :: ByteString -> ByteString -> Either CryptoError ByteString
 aesEncrypt k pt = encrypt <$> aesInit k
