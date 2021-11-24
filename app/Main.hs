@@ -2,7 +2,7 @@
 
 module Main where
 
-import Crypto.Aes (decryptFile, encryptFile)
+import Crypto.Aes (decryptFile, encryptFile, genKeyFile)
 import Data.ByteString (ByteString)
 import System.Console.CmdArgs
 
@@ -53,6 +53,6 @@ mode =
 main :: IO ()
 main = handleArgs =<< cmdArgsRun mode
   where
-    handleArgs (Gen outF) = undefined
+    handleArgs (Gen outF) = genKeyFile outF
     handleArgs (Enc outF keyF inF) = encryptFile keyF inF outF
     handleArgs (Dec outF keyF inF) = decryptFile keyF inF outF
