@@ -29,7 +29,7 @@ library:
   source-dirs: src
 
 executables:
-  fastaes-exe:
+  fastaes:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
